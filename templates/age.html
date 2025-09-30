@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Age{% endblock %}
+{% block content %}
+<h1>Quel âge as-tu ?</h1>
+<form method="POST">
+    <input type="number" name="age" placeholder="Ton âge">
+    <button type="submit">Envoyer</button>
+</form>
+{% if age %}
+<p>Tu as {{ age }} ans.</p>
+{% endif %}
+{% endblock %}
